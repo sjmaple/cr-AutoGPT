@@ -64,7 +64,7 @@ const CACHED: Record<string, string[]> = {
     "groupSessionsForSidebar(",
   ],
   [`${COPILOT}/components/ContextPanel/components/FilesTab/useSessionFiles.ts`]:
-    ["indexMessageArtifacts(", "groupSessionFiles("],
+    ["getMessageArtifacts(message)", "(query.data?.files ?? [])"],
   [`${COPILOT}/components/CopilotChatActionsProvider/CopilotChatActionsProvider.tsx`]:
     ["onBackendTurn: "],
   [`${COPILOT}/components/CopilotPendingReviews/CopilotPendingReviews.tsx`]: [
