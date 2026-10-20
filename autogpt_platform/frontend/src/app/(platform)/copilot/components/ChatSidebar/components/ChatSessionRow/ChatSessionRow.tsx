@@ -69,6 +69,8 @@ interface Props {
   ) => void;
 }
 
+// memo-boundary: a sidebar row. The sidebar re-renders for any one session's
+// change, and every other row's props stay the same.
 export const ChatSessionRow = memo(function ChatSessionRow({
   session,
   isActive,

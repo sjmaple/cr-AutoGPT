@@ -300,6 +300,9 @@ export function ChatSidebar() {
       });
   }
 
+  // Kept as a memo: the groups are read after the age-clock hook below, and
+  // the compiler cannot cache a value across a hook call, so without it they
+  // would be rebuilt on every render.
   const { pinned, groups, showHeaders } = useMemo(
     () =>
       groupSessionsForSidebar({
